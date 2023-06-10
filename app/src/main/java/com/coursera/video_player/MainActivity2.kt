@@ -14,6 +14,7 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         val videoview =findViewById<VideoView>(R.id.videoView)
         val mediaController=MediaController(this)
+        print("Hello")
         mediaController.setAnchorView(videoview)
         val uri:Uri= Uri.parse("android.resource://$packageName/raw/demo_1")
         videoview.setMediaController(mediaController)
